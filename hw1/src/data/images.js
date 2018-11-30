@@ -17,3 +17,5 @@ const images = [{
     src: "../assests/image6.jpg"
 }
 ];
+
+module.exports = images;

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Article from "./components/article";
+// import Article from "./components/article";
 import Gallery from "./components/gallery";
-import articles from "../data/articles";
-import images from "../data/images"
+import articles from "./data/articles";
+import images from "./data/images"
 
 class App extends Component {
 constructor (props){
@@ -16,8 +16,8 @@ constructor (props){
   render() {
     return (
       <div >
-        <Gallery images= { this.state.images }/>
-        <Article articles={ this.state.articles }/>
+        <Gallery images= { this.state.images } articles={ this.state.articles }/>
+        {/* <Article articles={ this.state.articles }/> */}
       </div>
     );
   }
